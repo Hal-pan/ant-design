@@ -1645,6 +1645,9 @@ this.tinycolor = tinycolor;
 @btn-font-weight : 400;
 @btn-border-radius-base : @border-radius-base;
 @btn-border-radius-sm : @border-radius-base;
+@btn-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+@btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+@btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
 
 @btn-primary-color : #fff;
 @btn-primary-bg : @primary-color;
@@ -6047,6 +6050,10 @@ form .ant-upload {
 .ant-input-affix-wrapper .ant-input-suffix {
   color: rgba(0, 0, 0, 0.65);
 }
+.ant-input-affix-wrapper .ant-input-prefix:hover,
+.ant-input-affix-wrapper .ant-input-suffix:hover {
+  color: rgba(0, 0, 0, 0.45);
+}
 .ant-input-password-icon:hover {
   color: #333;
 }
@@ -7020,7 +7027,7 @@ form .ant-upload {
 }
 .ant-radio-button-wrapper-disabled.ant-radio-button-wrapper-checked {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #e6e6e6;
   border-color: #d9d9d9;
   box-shadow: none;
 }
